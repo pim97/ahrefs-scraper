@@ -1,4 +1,4 @@
-# Ahrefs.com Scraper
+# Ahrefs.com Backlinks Scraper
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
