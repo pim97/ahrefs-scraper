@@ -32,3 +32,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Keywords for Ahrefs scraping Program on GitHub:
 Ahrefs.com, SEO tools, Backlink analysis, Keyword research, Site audit, Competitor analysis, Rank tracking, Content research, Link building, SEO software, Website analytics, Keyword ranking, On-page SEO, Off-page SEO, Organic search, SEO strategy, Digital marketing, SEO audit, SERP analysis, SEO optimization, Website ranking.
+
+## Legal and Ethical Considerations
+
+Remember to adhere to legal and ethical guidelines when scraping websites. Always respect the website's terms of service and scraping policies. Ensure your use of the scraped data complies with applicable laws and regulations, especially regarding data privacy and intellectual property rights. 🚫⚖️
+
+*Disclaimer: This web scraping guide is intended solely for educational and informational purposes. Please use web scraping responsibly and in accordance with the terms and conditions of the target website.* 📚🔍
