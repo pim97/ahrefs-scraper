@@ -17,9 +17,7 @@ async function run() {
      * For all session options check: https://wiki.scrappey.com/getting-started#78f3fd5551724a78b12d548e95485bbe
      * We allow for multiple sessions to be created, each session has a different proxy and user-agent and unique fingerprint.
      */
-    const session = await scrappey.createSession({
-        "datacenter": true,
-    })
+    const session = await scrappey.createSession({})
 
     /**
      * Executes the browser actions requested
