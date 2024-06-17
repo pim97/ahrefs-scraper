@@ -14,12 +14,6 @@ const scrappey = new Scrappey(SCRAPPEY_API_KEY);
 async function run() {
 
     /**
-     * For all session options check: https://wiki.scrappey.com/getting-started#78f3fd5551724a78b12d548e95485bbe
-     * We allow for multiple sessions to be created, each session has a different proxy and user-agent and unique fingerprint.
-     */
-    const session = await scrappey.createSession({})
-
-    /**
      * Executes the browser actions requested
      */
     const result = await scrappey.get({
@@ -57,11 +51,6 @@ async function run() {
      */
     console.log(result)
 
-
-    /**
-     * Destroys the session, this will free up space for other users
-     */
-    await scrappey.destroySession(session.session)
 }
 
 run().catch(console.error);
