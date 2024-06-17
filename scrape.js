@@ -15,8 +15,9 @@ async function run() {
 
     /**
      * Executes the browser actions requested
+       scrapes the backlinks
      */
-    const result = await scrappey.get({
+    const backlinks = await scrappey.get({
         "cmd": "request.get",
         "url": "https://ahrefs.com/backlink-checker?input=yep.com",
         "interceptFetchRequest": ["https://ahrefs.com/v4/stGetFreeBacklinksList", "https://ahrefs.com/v4/stGetFreeBacklinksOverview"],
@@ -27,6 +28,39 @@ async function run() {
             }
         ]
     })
+
+     /**
+     * Executes the browser actions requested
+       scrapes the authority
+     */
+    const authority = await scrappey.get({
+        "cmd": "request.get",
+        "url": "https://ahrefs.com/website-authority-checker/?input=ahrefs.com",
+        "interceptFetchRequest": ["https://ahrefs.com/v4/stGetFreeWebsiteOverview"],
+        "browserActions": [
+            {
+                "type": "solve_captcha",
+                "captcha": "turnstile"
+            }
+        ]
+    })
+
+    /**
+     * Executes the browser actions requested
+       scrapes the broken backlinks
+     */
+    const broken = await scrappey.get({
+        "cmd": "request.get",
+        "url": "https://ahrefs.com/broken-link-checker/?input=ahrefs.com&mode=subdomains",
+        "interceptFetchRequest": ["https://ahrefs.com/v4/stGetFreeBrokenLinksList"],
+        "browserActions": [
+            {
+                "type": "solve_captcha",
+                "captcha": "turnstile"
+            }
+        ]
+    })
+    
 
     /**
      * Example response
