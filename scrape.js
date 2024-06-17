@@ -30,10 +30,6 @@ async function run() {
         "interceptFetchRequest": "https://ahrefs.com/v4/stGetFreeBacklinksList",
         "browserActions": [
             {
-                "type": "click",
-                "cssSelector": "button[class='css-ljl0n3-button css-rxvlhs-buttonAlignContent css-ohx8vg-buttonColor css-8i44dk css-xja2l0-buttonFlexGrow css-r0mgdk']"
-            },
-            {
                 "type": "solve_captcha",
                 "captcha": "turnstile"
             }
