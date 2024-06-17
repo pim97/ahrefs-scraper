@@ -19,7 +19,7 @@ async function run() {
     const result = await scrappey.get({
         "cmd": "request.get",
         "url": "https://ahrefs.com/backlink-checker?input=yep.com",
-        "interceptFetchRequest": "https://ahrefs.com/v4/stGetFreeBacklinksList",
+        "interceptFetchRequest": ["https://ahrefs.com/v4/stGetFreeBacklinksList", "https://ahrefs.com/v4/stGetFreeBacklinksOverview"],
         "browserActions": [
             {
                 "type": "solve_captcha",
