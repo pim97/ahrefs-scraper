@@ -28,6 +28,7 @@ async function run() {
             }
         ]
     })
+    console.log(backlinks)
 
      /**
      * Executes the browser actions requested
@@ -44,6 +45,7 @@ async function run() {
             }
         ]
     })
+    console.log(authority)
 
     /**
      * Executes the browser actions requested
@@ -60,6 +62,7 @@ async function run() {
             }
         ]
     })
+    console.log(broken)
     
 
     /**
@@ -83,7 +86,6 @@ async function run() {
         }
     
      */
-    console.log(result)
 
 }
 
