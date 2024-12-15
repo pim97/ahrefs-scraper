@@ -16,6 +16,10 @@ async function run() {
     /**
      * Executes the browser actions requested
        scrapes the backlinks
+
+       Faster example available here
+       https://www.scrappey.com/scrapers/other/ahrefs-backlink-scraper-v2
+       
      */
     const backlinks = await scrappey.get({
         "cmd": "request.get",
@@ -33,6 +37,10 @@ async function run() {
      /**
      * Executes the browser actions requested
        scrapes the authority
+
+       Faster example available here
+       https://www.scrappey.com/scrapers/other/ahrefs-website-authority-checker-v2
+       
      */
     const authority = await scrappey.get({
         "cmd": "request.get",
@@ -50,6 +58,10 @@ async function run() {
     /**
      * Executes the browser actions requested
        scrapes the broken backlinks
+
+       Faster example available here
+       https://www.scrappey.com/scrapers/other/ahrefs-broken-backlink-checker-v2
+       
      */
     const broken = await scrappey.get({
         "cmd": "request.get",
